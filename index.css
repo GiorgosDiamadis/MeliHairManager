@@ -1,0 +1,196 @@
+.header {
+  max-width: 857px;
+  height: 533px;
+  position: relative;
+  background-image: url("chairs.png");
+  background-size: contain;
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(31 31 31 / 66%);
+  bottom: 0;
+}
+.header > * {
+  color: white;
+}
+.header h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.header .company-info {
+  z-index: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: absolute;
+  right: 10px;
+  margin-top: 60px;
+}
+.logo-container {
+  z-index: 1;
+  width: 223px;
+  height: 223px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.appointment h1 {
+  color: grey;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.appointment select,
+.modal-content select {
+  max-width: 90%;
+  margin: auto;
+  border-radius: 30px;
+  padding: 15px;
+  border: 4px solid grey;
+}
+.appointment select:focus,
+.modal-content select:focus {
+  outline: none !important;
+  border: 4px solid grey !important;
+  box-shadow: none !important;
+}
+.modal-body .selection {
+  flex-direction: column;
+}
+.modal-body svg {
+  position: relative;
+  top: 13px;
+}
+
+.modal-body .entry {
+  gap: 10px;
+  margin: 1.5rem 0;
+}
+.modal-body .entry,
+.modal-body .entry .selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-body .entry p {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+.modal-content select {
+  width: 250px;
+  background-color: #6aa3bd;
+  border: 4px solid white;
+  color: white;
+  padding: 8px;
+}
+.modal-content select:focus {
+  border: 4px solid white !important;
+}
+.logo {
+  width: 150px;
+}
+.description {
+  list-style: none;
+  color: grey;
+  width: 90%;
+  font-size: 1.2rem;
+  margin: auto;
+}
+
+.description li {
+  margin: 1rem 0;
+}
+.description li span:first-child {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.container-sm {
+  max-width: 857px !important;
+}
+
+.nav-item a {
+  color: white !important;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+nav {
+  padding: 0 1rem;
+}
+
+.bg-dark {
+  background-color: grey !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.collapsing {
+  background-color: grey !important;
+}
+
+.collapse.show {
+  background-color: grey !important;
+}
+.navbar-brand {
+  color: white !important;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.container-sm {
+  padding: 0 !important;
+}
+.modal-content {
+  background-color: #6aa3bd !important;
+  border-radius: 30px;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  border: none !important;
+}
+
+@media (max-width: 800px) {
+  .company-info {
+    position: inherit !important;
+    margin-top: 1rem !important;
+  }
+
+  .company-info p {
+    text-align: center;
+  }
+
+  .header h1 {
+    margin-top: 7rem;
+  }
+}
+.transparent {
+  background-color: transparent !important;
+}
